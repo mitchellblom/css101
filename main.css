@@ -53,7 +53,61 @@ h2 ~ p {							/* targets siblings of h2 */
 	max-width: 100%;
 }
 
+/* Hover on anchor tags */
 
+a:hover {
+	font-size: 50px;
+}
+
+/* Actively clicking on anchor tags */
+
+a:active {
+	background-color: green;
+}
+
+/* Focus */
+
+input:focus {
+	background-color: yellow;
+}
+
+/* nth-child */
+
+.sub-div li:nth-child(2n + 1) {
+	border: pink 5px solid;
+}
+
+.sub-div li:nth-child(2n) {
+	border: blue 5px solid;
+}
+
+.sub-div li:nth-of-type(2n) {
+	color: blue;
+}
+
+section p:nth-child(2) {
+	color: red;
+}
+
+section p:nth-of-type(2) {
+	color: orange;
+}
+
+/* before */
+
+#main-div-1::before {
+	content: "\201C";
+	font-size: 60px;
+	font-weight: bold;
+	color: purple;
+}
+
+/* after */
+
+#main-div-1::after{
+	content: "$$$$";
+	font-size: 30px;
+}
 
 /*******************************
 Screwing around below here
